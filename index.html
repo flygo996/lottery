@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width initial-scale=1,maximum-scale=1,minimum-scale=1 user-scalable=no" />
+  <title>抽奖</title>
+  <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="container_lottery">
+      <div class="rest_count">剩余<span>-</span>次抽奖机会</div>
+      <div class="turntable">
+        <div class="round_table">
+          <img class="round_table_img" src="./assets/img/turntable.png" />
+        </div>
+        <div class="spinner">
+          <img src="./assets/img/btn_lottery.png">
+        </div>
+      </div>
+    </div>
+    <div class="reward_list">
+      <div class="reward_item">
+        <span></span>
+        <span class="red"></span>
+      </div>
+    </div>
+    <div class="rules_title">+ 活动规则 +</div>
+    <div class="rules">
+      <div class="rules_item_first">
+        <div class="rules_item_txt">第一次记账+1</div>
+        <div class="rules_item_btn" data-task="100010102">记一笔</div>
+      </div>
+      <div class="rules_item">
+        <div class="rules_item_txt">第一次登录+1</div>
+        <div class="rules_item_btn" data-task="100010101">去登录</div>
+      </div>
+      <div class="rules_item_last">
+        <div class="rules_item_txt">每天只能抽奖4次</div>
+      </div>
+    </div>
+    <div class="message_with_header">
+      <div class="message_panel">
+        <div class="message_title_empty">
+          <img src="./assets/img/pop_header.png" class="message_header" />
+        </div>
+        <div class="message_content">手气这么好，居然没抽中！</div>
+        <div class="message_btn">再来一次</div>
+      </div>
+    </div>
+    <div class="message">
+      <div class="message_panel">
+        <div class="message_title">抽奖次数已达上限</div>
+        <div class="message_content">您今天抽奖的次数已达上限(4次)</div>
+        <div class="message_btn">明天再来</div>
+        <div class="message_bt_title"></div>
+      </div>
+    </div>
+    <div class="shade"></div>
+
+    <div class="lds-css ng-scope loading">
+      <div class="lds-spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="loading_shade"></div>
+
+  </div>
+</body>
+<script src="./assets/js/config.js"></script>
+<script src="./assets/lib/zepto.js"></script>
+<script src="./assets/lib/fx.js"></script>
+<script src="./assets/lib/fx_methods.js"></script>
+<script src="./assets/js/utils.js"></script>
+<script src="./assets/js/index.js"></script>
+
+</html>
